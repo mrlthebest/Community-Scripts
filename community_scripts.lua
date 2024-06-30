@@ -59,6 +59,12 @@ script_manager = {
                 author = 'Ryan',
                 enabled = false
             },
+            ['Sense'] = {
+                url = 'https://raw.githubusercontent.com/ryanzin/OTCV8/main/xNameSense.lua',
+                description = 'Script de sense, escreva "xNICK" que irá dar sense no nick, x0 para limpar o sense.',
+                author = 'Ryan',
+                enabled = false
+            },
             ['Bug Map Mobile'] = {
                 url = 'https://raw.githubusercontent.com/mrlthebest/OTCV8/main/Bug_Map_Mobile.lua',
                 description = 'Script de bug map mobile.',
