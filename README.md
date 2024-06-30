@@ -29,6 +29,6 @@ Este projeto oferece uma interface para os usuários baixarem e gerenciarem macr
    - Atualizado o tema principal para ingles.
 
 
-Im not a programmer, it's just a hobby.
-Macros Credits on the interface ingame.
+* Im not a programmer, it's just a hobby.
+* Macros Credits on the interface ingame.
 
