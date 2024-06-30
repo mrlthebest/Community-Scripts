@@ -18,7 +18,7 @@ Este projeto oferece uma interface para baixar e gerenciar macros criadas pela c
 1. Baixe ou copie o código **main.lua** e adicione no ingame scripts editor ou na pasta do bot, após isso reinicie o bot.
 2. Sempre que houver uma atualização, irá aparecer uma mensagem em **amarelo** dando um aviso para clicar no botão de **Update Files**.
 
-Para baixar automaticamente o script **main.lua**, [clique aqui](https://raw.githubusercontent.com/seu_usuario/seu_repositório/main/main.lua).
+Para acessar o script **main.lua**, [clique aqui](https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/main.lua).
 
 
 ## Creditos Principais:
