@@ -4,7 +4,7 @@ Projeto iniciado em 2024, criado para baixar e gerenciar macros da comunidade vi
 
 ## Descrição
 
-Este projeto oferece uma interface para os usuários baixarem e gerenciarem macros criadas pela comunidade para uso no cliente OTCV8. Os scripts são disponibilizados via GitHub e podem ser facilmente habilitados ou desabilitados diretamente na interface do usuário.
+Este projeto oferece uma interface para baixar e gerenciar macros criadas pela comunidade para uso no cliente OTCV8. Os scripts são disponibilizados via GitHub e podem ser facilmente habilitados ou desabilitados diretamente na interface do usuário.
 
 ## Funcionalidades Principais
 
