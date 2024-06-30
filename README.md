@@ -11,7 +11,6 @@ Este projeto oferece uma interface para os usuários baixarem e gerenciarem macr
 - Interface intuitiva para navegar e selecionar macros.
 - Download automático de scripts via URLs do GitHub.
 - Habilitação e desabilitação fácil de scripts selecionados.
-- Suporte para múltiplas categorias de macros.
 
 ## Instalação do Script:
 
