@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-local urlDirectory = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/community_scripts.lua';
+local urlDirectory = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/scripts_directory.lua';
 modules.corelib.HTTP.get(urlDirectory, function(script) 
     assert(loadstring(script))() 
 end);
