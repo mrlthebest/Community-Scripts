@@ -1,5 +1,13 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+local urlDirectory = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/community_scripts.lua';
+modules.corelib.HTTP.get(urlDirectory, function(script) 
+    assert(loadstring(script))() 
+end);
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 if not fileExists(script_path) then
     g_resources.makeDir(script_path);
 end
