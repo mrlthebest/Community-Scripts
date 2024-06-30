@@ -15,20 +15,18 @@ Este projeto oferece uma interface para os usuários baixarem e gerenciarem macr
 ## Instalação do Script:
 
 - Baixe ou copie o código **main.lua** e adicione no ingame scripts editor ou na pasta do bot, após isso reinicie o bot.
-- Sempre que houver uma atualização, irá aparecer uma mensagem em amarelo dando um aviso para clicar no botão de **Update Files**
+- Sempre que houver uma atualização, irá aparecer uma mensagem em <span style="color: yellow;">amarelo</span> dando um aviso para clicar no botão de **Update Files**.
 
 ## Creditos Principais:
 
- - mrlthebest
+ - <span style="color: #6aa84f; font-weight: bold;">mrlthebest</span>
 
 ## Versão Atual:
 
- - 0.2
+ - <span style="font-size: 1.2em;">0.2</span>
    - Adicionado um filtro de macros;
    - Adicionado um sistema simples de aviso de versão.
-   - Atualizado o tema principal para ingles.
-
+   - Atualizado o tema principal para inglês.
 
 * Im not a programmer, it's just a hobby.
 * Macros Credits on the interface ingame.
-
