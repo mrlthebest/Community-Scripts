@@ -1,10 +1,8 @@
 # Community-Scripts
 
-Projeto iniciado em 2024, criado para baixar e gerenciar macros da comunidade via GitHub para o bot do OTCV8.
-
 ## Descrição
 
-Este projeto oferece uma interface para baixar e gerenciar macros criadas pela comunidade para uso no cliente OTCV8. Os scripts são disponibilizados via GitHub e podem ser facilmente habilitados ou desabilitados diretamente na interface do usuário.
+Este script oferece uma interface para baixar e gerenciar macros criadas pela comunidade para uso no cliente OTCV8. Os scripts são disponibilizados via GitHub e podem ser facilmente habilitados ou desabilitados diretamente na interface do usuário.
 
 ## Funcionalidades Principais
 
