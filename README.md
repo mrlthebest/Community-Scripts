@@ -25,10 +25,10 @@ Para acessar o script **main.lua**, [clique aqui](https://raw.githubusercontent.
 
 ## Versão Atual:
 
- - **0.2**
-   - Adicionado um filtro de macros;
-   - Adicionado um sistema simples de aviso de versão.
-   - Atualizado o tema principal para inglês.
+ - **0.3**
+   - Atualizado a linguagem nativa para português;
+   - Adicionado 30+ novos macros, contabilizando mais de 50 macros no total;
+   - Adicionado um sistema de segurança simples no codigo principal(creditos AnenScripts).
 
 * _Im not a programmer, it's just a hobby._
 * _Macros Credits on the interface ingame._
