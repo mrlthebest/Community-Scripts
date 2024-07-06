@@ -364,7 +364,7 @@ script_manager = {
             ['Dance'] = {
                 url = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/Scripts/Utilities/dance.lua',
                 description = 'Script de dance.',
-                author = 'AnenScripts',
+                author = 'mrlthebest',
                 enabled = false
             },
 
@@ -658,3 +658,4 @@ end
 if script_manager.actualVersion ~= actualVersion then
     updateLabel:show();
 end
+
