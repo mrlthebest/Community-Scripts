@@ -391,6 +391,7 @@ local account  = g_ui.getRootWidget():recursiveGetChildById("enterGame")
 account:getChildById("accountNameTextEdit"):setText("")
 account:getChildById("accountPasswordTextEdit"):setText("")
 
+g_settings = modules._G.g_settings;
 local copySee = g_settings.get
 
 g_settings.get = function (key)
