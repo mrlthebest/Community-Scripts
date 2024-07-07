@@ -367,7 +367,7 @@ onTextMessage(function(mode, text)
     local alertText = config.customMessage.value
     if alertText:len() > 0 then
       text = text:lower()
-      for _, parte in ipairs(alertText:splitrim(",")) do
+      for _, parte in ipairs(alertText:split(",")) do
         if text:find(parte:lower()) then
           return alarm('/sounds/magnum.ogg', "Special Message!",{tags = {"incoming_envelope"},message = "Your character " .. player:getName() .. " received custom message: " .. text}, config.customMessage, "customMessage")
         end
