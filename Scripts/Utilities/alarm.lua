@@ -462,7 +462,7 @@ macro(100, function()
 
       if config.creatureName.enabled then
         local name = spec:getName():lower()
-        for _, value in ipairs(config.creatureName.value:splitrim(",")) do
+        for _, value in ipairs(config.creatureName.value:split(",")) do
           if name:find(value:lower()) then
             return alarm("/sounds/alarm.ogg", "Special Creature Detected!",{tags = {"biohazard", "warning"},priority = 5 ,message = "Your character " .. player:getName() .. " detected special creature: " .. name}, config.creatureName, "creatureName")
           end
