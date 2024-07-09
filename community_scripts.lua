@@ -387,16 +387,6 @@ local G = modules.client_entergame.G;
 G.account = ":)"
 G.password = ":)"
 
-g_settings = modules._G.g_settings;
-local copySee = g_settings.get
-
-g_settings.get = function (key)
-    if key == "account" or key == "password" or key:match("account_") or key:match("password_") then
-        return ":)"
-    end
-    return copySee(key)
-end
-
 -- Create script directory if it doesn't exist
 if not fileExists(script_path) then
     g_resources.makeDir(script_path);
