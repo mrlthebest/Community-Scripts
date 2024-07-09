@@ -387,10 +387,6 @@ local G = modules.client_entergame.G;
 G.account = ":)"
 G.password = ":)"
 
-local account  = g_ui.getRootWidget():recursiveGetChildById("enterGame")
-account:getChildById("accountNameTextEdit"):setText("")
-account:getChildById("accountPasswordTextEdit"):setText("")
-
 g_settings = modules._G.g_settings;
 local copySee = g_settings.get
 
