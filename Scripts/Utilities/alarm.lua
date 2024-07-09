@@ -376,7 +376,7 @@ onTextMessage(function(mode, text)
   end
 
   if config.playerUpSkill.enabled then
-    if string.match(text, "You advanced from" or string.match(text, "You advanced in")) then
+    if string.match(text, "You advanced from") or string.match(text, "You advanced in") then
       return alarm('/sounds/magnum.ogg', "Skill UP!",{tags = {"arrow_up", "clap"}, message = "Your character " .. player:getName() .. " advanced in skill: " .. text}, config.playerUpSkill, "playerUpSkill")
     end
   end
