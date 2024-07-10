@@ -373,7 +373,6 @@ script_manager = {
     },
 };
 
-
 -- Global functions and initializations
 _G = modules._G;
 context = _G.getfenv();
@@ -381,11 +380,6 @@ g_resources = _G.g_resources;
 listDirectoryFiles = g_resources.listDirectoryFiles;
 readFileContents = g_resources.readFileContents;
 fileExists = g_resources.fileExists;
-
--- AnenScripts credit
-local G = modules.client_entergame.G;
-G.account = ":)"
-G.password = ":)"
 
 -- Create script directory if it doesn't exist
 if not fileExists(script_path) then
