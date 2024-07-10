@@ -11,4 +11,4 @@ macro(macroDelay, macroName, function()
     if (not hasHaste() or isParalyzed()) then
         say(storage.speedSpell)
     end
-end, tambem);
+end, tabName);
