@@ -346,7 +346,7 @@ script_manager = {
             ['Stamina'] = {
                 url = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/Scripts/Utilities/stamina.lua',
                 description = 'Script de usar stamina.',
-                author = 'AnenScripts',
+                author = 'Asking',
                 enabled = false
             },
             ['Script Manager'] = {
