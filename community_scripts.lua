@@ -147,7 +147,7 @@ script_manager = {
             ['Anti Push'] = {
                 url = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/Scripts/PvP/anti_push.lua',
                 description = 'Script de anti push.',
-                author = 'mrlthebest',
+                author = 'AnenScripts',
                 enabled = false
             },
             ['MW Frente Target'] = {
