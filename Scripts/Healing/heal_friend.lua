@@ -114,7 +114,7 @@ macro(macroDelay, macroName, function(m)
             if not specPos then return; end
             local distanceToSpec = getDistanceBetween(playerPos, specPos);
             if distanceToSpec <= distanceHeal and specHealth <= percentageHeal then
-                if (spellHeal:getText() ~= 'Spell Heal' or spellHeal:len() > 0) then
+                if (spellHeal ~= 'Spell Heal' or spellHeal:len() > 0) then
                     say(spellHeal .. ' "' .. spec:getName())
                 else
                     useWith(itemHeal, spec)
