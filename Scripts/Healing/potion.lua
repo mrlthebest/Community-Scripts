@@ -3,7 +3,6 @@ local macroDelay = 100;
 
 UI.Separator(tabName)
 
-warn(type(addScrollBar))
 addScrollBar('potionHealth', 'Porcentagem Vida', 1, 100, 99, tabName, 'Porcentagem de vida para usar a potion.');
 addScrollBar('potionMana', 'Porcentagem Mana', 1, 100, 99, tabName, 'Porcentagem de mana para usar a potion.');
 addItem('potionLife', 'Potion Life', 11863, tabName, '');
