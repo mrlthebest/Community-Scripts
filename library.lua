@@ -11,7 +11,8 @@
   Tooltip: Tooltip que irá ficar no widget
 ]]--
 
-scrollBar = [[
+-- Scroll Bar Layout
+local scrollBarLayout = [[
 Panel
   height: 28
   margin-top: 3
@@ -34,29 +35,26 @@ Panel
     step: 1
 ]];
 
-storage.scrollBarValues = storage.scrollBarValues or {};
+storage.scrollBarValues = storage.scrollBarValues or {}
+
 addScrollBar = function(id, title, min, max, defaultValue, dest, tooltip)
-    local value = storage.scrollBarValues[id] or defaultValue
-    local widget = setupUI(scrollBar, dest)
+    local value = math.min(math.max(storage.scrollBarValues[id] or defaultValue, min), max)
+    local widget = setupUI(scrollBarLayout, dest)
+    if not widget.text or not widget.scroll then
+        error("Failed to create widgets for scroll bar")
+        return
+    end
     widget.text:setTooltip(tooltip)
     widget.scroll.onValueChange = function(scroll, value)
-        widget.text:setText(title)
-        widget.scroll:setText(value)
-        if value == 0 then
-            value = 1
-        end
+        widget.text:setText(title .. ": " .. value)
         storage.scrollBarValues[id] = value
     end
-    widget.scroll:setRange(min, max)
-    widget.scroll:setTooltip(tooltip)
-    if max - min > 1000 then
-        widget.scroll:setStep(100)
-    elseif max - min > 100 then
-        widget.scroll:setStep(10)
-    end
+    widget.scroll:setMinimum(min)
+    widget.scroll:setMaximum(max)
     widget.scroll:setValue(value)
     widget.scroll.onValueChange(widget.scroll, value)
 end
+
 
 --[[
 
@@ -69,27 +67,24 @@ end
   Tooltip: Tooltip que irá ficar no widget
 ]]--
 
-scrollBar = [[
+-- Switch Bar Layout
+local switchBarLayout = [[
 BotSwitch
   height: 20
   margin-top: 7
 ]];
 
-storage.switchStatus = storage.switchStatus or {};
+storage.switchStatus = storage.switchStatus or {}
+
 addSwitchBar = function(id, title, defaultValue, dest, tooltip)
-    local widget = setupUI(scrollBar, dest)
+    local widget = setupUI(switchBarLayout, dest)
     widget.onClick = function()
         widget:setOn(not widget:isOn())
         storage.switchStatus[id] = widget:isOn()
     end
     widget:setText(title)
     widget:setTooltip(tooltip)
-    if storage.switchStatus[id] == nil then
-        widget:setOn(defaultValue)
-    else
-        widget:setOn(storage.switchStatus[id])
-    end
-    storage.switchStatus[id] = widget:isOn()
+    widget:setOn(storage.switchStatus[id] or defaultValue)
 end
 
 
