@@ -166,11 +166,15 @@ MainWindow
                         script_bot.buttonRemoveJson = UI.Button('Update Files');
                         script_bot.buttonRemoveJson:setColor('#d2cac5');
                         script_bot.buttonRemoveJson:setTooltip('Click here only when there is an update.');
+                        script_bot.buttonRemoveJson:hide();
+
+                        script_bot.restartStorage = function()
+                            g_resources.deleteFile(script_path_json);
+                            reload();
+                        end
 
                         script_bot.buttonRemoveJson.onClick = function(widget)
-                            g_resources.deleteFile(script_path_json);
-                            --script_bot.saveScripts();
-                            reload();
+                            script_bot.restartStorage();
                         end
 
                         -- Close Widget Button
@@ -296,6 +300,7 @@ MainWindow
 
                         -- Check for version update
                         if script_manager.actualVersion ~= actualVersion then
+                            script_bot.buttonRemoveJson:show();
                             updateLabel:show();
                         end
                     end
