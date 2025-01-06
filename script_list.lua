@@ -1,7 +1,7 @@
 
 -- Initialize script_manager with script cache
 script_manager = {
-    actualVersion = 0.3,
+    actualVersion = 0.4,
     _cache = {
 
         Dbo = {
