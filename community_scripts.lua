@@ -168,8 +168,7 @@ MainWindow
                         script_bot.buttonRemoveJson:setTooltip('Click here only when there is an update.');
 
                         script_bot.buttonRemoveJson.onClick = function(widget)
-                            --g_resources.deleteFile(script_path_json);
-                            g_resources.deleteFile(script_path);
+                            g_resources.deleteFile(script_path_json);
                             warn(script_path)
                             --script_bot.saveScripts();
                             --reload();
