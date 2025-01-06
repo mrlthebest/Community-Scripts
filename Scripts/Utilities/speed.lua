@@ -1,7 +1,7 @@
 
 local macroName = 'Speed';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+setDefaultTab(tabName);
 
 addTextEdit("Speed Spell ", storage.speedSpell or "Speed Spell", function(widget, text)
   storage.speedSpell = text:trim():lower();
