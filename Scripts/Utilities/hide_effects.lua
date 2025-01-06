@@ -1,6 +1,6 @@
 local macroName = 'Hide Sprites';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+setDefaultTab(tabName);
 
 sprh = macro(macroDelay, macroName, function() end, tabName)
 onAddThing(function(tile, thing)
