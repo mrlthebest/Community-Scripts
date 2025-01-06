@@ -1,6 +1,5 @@
 local macroName = 'Auto Share Exp'
 local macroDelay = 100
-local tabName = 'Main'
 
 macro(macroDelay, macroName, function()
     -- Made By VivoDibra
