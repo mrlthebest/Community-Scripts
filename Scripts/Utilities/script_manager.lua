@@ -1,3 +1,4 @@
+setDefaultTab(tabName);
 g_ui.loadUIFromString([[
 TextListEntry < UIWidget
   background-color: alpha
