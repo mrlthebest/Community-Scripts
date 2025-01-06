@@ -152,7 +152,6 @@ MainWindow
                         script_bot.widget:hide();
                         script_bot.widget:setText('Community Scripts - ' .. actualVersion);
 
-                        UI.Separator();
 
                         -- Update label
                         local updateLabel = UI.Label('Community Scripts. \n New version available, click "Update Files". \nVersion: ' .. actualVersion);
