@@ -1,6 +1,5 @@
 local macroName = 'E-Ring';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
 
 --Join Discord server for free scripts
 --https://discord.gg/RkQ9nyPMBH
