@@ -81,7 +81,12 @@ do
 	else
 		TargetBot.setOff();
 	end
-    change_main_logic();
+	if profile._storage.targetBot.selected then
+		storage._configs.targetbot_configs.selected = profile._storage.targetBot.selected;
+	end
+	if profile._storage.caveBot.selected then
+		storage._configs.cavebot_configs.selected = profile._storage.caveBot.selected;
+	end
 end
 
 
