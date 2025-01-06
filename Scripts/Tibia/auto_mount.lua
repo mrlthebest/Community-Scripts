@@ -1,6 +1,5 @@
 local macroName = 'Mount';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
 
 macro(macroDelay, macroName, function()
     --Made By VivoDibra#1182 
