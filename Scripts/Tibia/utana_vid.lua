@@ -6,7 +6,6 @@ local config = {
 
 local macroName = 'Utana Vid';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
 
 macro(macroDelay, macroName, function()
     --Made By VivoDibra
