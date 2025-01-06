@@ -1,18 +1,20 @@
+script_bot = {};
+script_path = '/scripts_storage/';
 
 tabName = nil;
 if ragnarokBot then
+    script_path_json = ragnarokBot.path  .. player:getName() .. '.json';
     setDefaultTab('HP')
     tabName = setDefaultTab('HP')
 else
+    script_path_json = script_path .. player:getName() .. '.json';
     setDefaultTab('Main')
     tabName = setDefaultTab('Tools')
 end
 
 
 -- Initialize script_bot and script paths
-script_bot = {};
-script_path = '/scripts_storage/';
-script_path_json = (ragnarokBot and ragnarokBot.path or script_path) .. player:getName() .. '.json';
+
 
 -- Actual Version
 actualVersion = 0.4;
