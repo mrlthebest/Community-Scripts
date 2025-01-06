@@ -3,7 +3,7 @@ local macroDelay = 100;
 
 addTextEdit("Stack Spell", storage.stackSpell or "Stack Spell", function(widget, text)
     storage.stackSpell = text;
-end, tabName);
+end, setDefaultTab(tabName));
 
 local maxDistance = 8;
 
@@ -106,4 +106,4 @@ Stack.icon = addIcon("Stack",  {item=7382, text="Stack"}, macro(macroDelay, macr
     schedule(600, function()
         g_game.cancelAttack();
     end);
-end, tabName));
+end, setDefaultTab(tabName)));
