@@ -6,7 +6,7 @@
 
 local macroName = 'Sense';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+setDefaultTab(tabName);
 
 UI.TextEdit(storage.exivaSpell or "sense", function(widget, text)
   storage.exivaSpell = text;
