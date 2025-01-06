@@ -15,7 +15,7 @@ script_path = '/scripts_storage/';
 script_path_json = script_path .. player:getName() .. '.json';
 
 -- Actual Version
-actualVersion = 0.3;
+actualVersion = 0.4;
 
 local libraryList = {
     'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/refs/heads/main/library.lua',
