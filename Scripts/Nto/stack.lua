@@ -1,6 +1,5 @@
 local macroName = 'Stack';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
 
 addTextEdit("Stack Spell", storage.stackSpell or "Stack Spell", function(widget, text)
     storage.stackSpell = text;
