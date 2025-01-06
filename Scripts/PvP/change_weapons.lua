@@ -1,7 +1,5 @@
 local macroName = 'Change Weapon';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
-
 
 local lbT = UI.Label('C O N F I G ', tabName);
 lbT:setColor('orange');
