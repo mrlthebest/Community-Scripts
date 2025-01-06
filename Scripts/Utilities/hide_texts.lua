@@ -1,6 +1,6 @@
 local macroName = 'Hide';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+setDefaultTab(tabName);
 
 TH = macro(macroDelay, macroName .. " Orange Messages", function() end, tabName)
 onStaticText(function(thing, text)
