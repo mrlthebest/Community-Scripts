@@ -1,3 +1,7 @@
+if ragnarokBot then
+    setDefaultTab('Tools')
+end
+
 -- Initialize script_bot and script paths
 script_bot = {};
 script_path = '/scripts_storage/';
