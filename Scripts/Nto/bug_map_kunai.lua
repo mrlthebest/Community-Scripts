@@ -1,3 +1,6 @@
+local macroName = 'Bug Map Kunai';
+local macroDelay = 100;
+
 local bugMap = {};
 bugMap.directions = {
     ["W"] = {x = 0, y = -5, direction = 0},
