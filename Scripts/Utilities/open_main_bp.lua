@@ -1,7 +1,6 @@
 local macroName = 'Keep Open Main BP';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
-
+setDefaultTab(tabName);
 
 macro(macroDelay, macroName, function()
     --Made By VivoDibra#1182
