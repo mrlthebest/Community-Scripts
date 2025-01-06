@@ -1,6 +1,5 @@
 local macroName = 'Exchange Money';
 local macroDelay = 1000;
-local tabName = setDefaultTab('Main');
 
 if type(storage.moneyItems) ~= "table" then
     storage.moneyItems = {3031, 3035}
