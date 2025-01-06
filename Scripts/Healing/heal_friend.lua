@@ -1,6 +1,5 @@
 local macroName = 'Heal Friend';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
 
 
 itemWidget = [[
