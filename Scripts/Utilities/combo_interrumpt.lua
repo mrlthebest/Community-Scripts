@@ -1,6 +1,5 @@
 local macroName = 'Combo';
 local macroDelay = 100;
-local tabName = 'Main';
 setDefaultTab(tabName);
 
 
