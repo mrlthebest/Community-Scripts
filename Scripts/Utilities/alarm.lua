@@ -1,4 +1,4 @@
-
+setDefaultTab(tabName);
 local panelName = "alarmsAnen"
 
 local ui = setupUI([[
