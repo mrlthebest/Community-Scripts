@@ -1,8 +1,8 @@
 
 tabName = nil;
 if ragnarokBot then
-    setDefaultTab('Tools')
-    tabName = setDefaultTab('Tools')
+    setDefaultTab('HP')
+    tabName = setDefaultTab('HP')
 else
     setDefaultTab('Main')
     tabName = setDefaultTab('Tools')
