@@ -172,7 +172,7 @@ MainWindow
                             g_resources.deleteFile(script_path);
                             warn(script_path)
                             --script_bot.saveScripts();
-                            reload();
+                            --reload();
                         end
 
                         -- Close Widget Button
