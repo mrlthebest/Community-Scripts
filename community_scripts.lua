@@ -3,7 +3,7 @@ if ragnarokBot then
     tabName = setDefaultTab('Tools');
 else
     setDefaultTab('Main');
-    tabName = setDefaultTab('Main');
+    tabName = setDefaultTab('Tools');
 end
 
 -- Initialize script_bot and script paths
