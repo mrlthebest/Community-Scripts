@@ -1,6 +1,5 @@
 local macroName = 'Follow Attack';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
 
 --[[
     Créditos - Victor Neox - Discord: victorneox
