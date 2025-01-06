@@ -1,6 +1,6 @@
 local macroName = 'Use Doors';
 local macroDelay = 1000;
-local tabName = setDefaultTab('Main');
+setDefaultTab(tabName);
 
 
 --[[
