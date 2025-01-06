@@ -1,6 +1,6 @@
 local macroName = 'MW Cursor';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+setDefaultTab(tabName);
 
 UI.Label('R MW Key', tabName)
 itemWidget = [[
