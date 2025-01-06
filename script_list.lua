@@ -16,19 +16,19 @@ script_manager = {
 
         Nto = {
             ['Bug Map Kunai'] = {
-                url = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/Scripts/Nbo/bug_map_kunai.lua',
+                url = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/Scripts/Nto/bug_map_kunai.lua',
                 description = 'Script de bug map kunai para pc.',
                 author = 'Ryan',
                 enabled = false
             },
             ['Bug Map Kunai Mobile'] = {
-                url = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/Scripts/Nbo/bug_map_mobile_kunai.lua',
+                url = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/Scripts/Nto/bug_map_mobile_kunai.lua',
                 description = 'Script de bug map kunai para mobile.',
                 author = 'VictorNeox',
                 enabled = false
             },
             ['Stack'] = {
-                url = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/Scripts/Nbo/stack.lua',
+                url = 'https://raw.githubusercontent.com/mrlthebest/Community-Scripts/main/Scripts/Nto/stack.lua',
                 description = 'Script de stack, vai soltar a spell no monstro mais distante da tela.',
                 author = 'VictorNeox',
                 enabled = false
