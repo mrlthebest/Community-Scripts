@@ -1,6 +1,5 @@
 local macroName = 'Utura';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
 
 macro(macroDelay, macroNam, function()
     say("Utura")
