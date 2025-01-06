@@ -1,6 +1,6 @@
 local macroName = 'Mystic Defense';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+setDefaultTab(tabName);
 
 addTextEdit("Mystic Defense, Mystic Kai", storage.mysticSpell or "Mystic Defense, Mystic Kai", function(widget, text)
   storage.mysticSpell = text;
