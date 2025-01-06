@@ -1,6 +1,6 @@
 local macroName = 'Send Message on Trade';
 local macroDelay = 60000;
-local tabName = setDefaultTab('Main');
+setDefaultTab(tabName);
 
 
 macro(macroDelay, macroName, function()
