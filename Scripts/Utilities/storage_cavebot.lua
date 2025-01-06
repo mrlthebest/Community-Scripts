@@ -1,5 +1,5 @@
 
-local verify_looping = 5; -- delay para verificar e salvar todas configurações(minutos)
+local verify_looping = 5; -- delay para verificar e salvar todas configurações(segundos)
 
 
 -- n altera nada abaixo
