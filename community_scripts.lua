@@ -2,8 +2,8 @@ script_bot = {};
 
 tabName = nil;
 if ragnarokBot then
-    script_path = ragnarokBot.path .. '/scripts_storage/';
-    script_path_json = ragnarokBot.path  .. script_path .. player:getName() .. '.json';
+    script_path = ragnarokBot.path .. 'scripts_storage/';
+    script_path_json = script_path .. player:getName() .. '.json';
     setDefaultTab('HP')
     tabName = setDefaultTab('HP')
 else
