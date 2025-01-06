@@ -2,7 +2,6 @@
 
 local macroName = 'Time Spell';
 local macroDelay = 100;
-local tabName = 'Main'
 setDefaultTab(tabName);
 timeSpellPanelName = "timespellbot"
 local ui = setupUI([[
