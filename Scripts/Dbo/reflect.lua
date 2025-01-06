@@ -1,6 +1,6 @@
 local macroName = 'Reflect';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+tabName = setDefaultTab('Main');
 
 
 local reflectSpell = 'reflect' -- spell de reflect
