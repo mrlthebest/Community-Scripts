@@ -1,6 +1,6 @@
 local macroName = 'Follow';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+setDefaultTab(tabName);
 
 FollowPlayer = {
     targetId = nil,
