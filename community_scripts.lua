@@ -1,9 +1,10 @@
+tabName = nil;
 if ragnarokBot then
-    setDefaultTab('Tools');
-    tabName = setDefaultTab('Tools');
+    setDefaultTab('Tools')
+    tabName = setDefaultTab('Tools')
 else
-    setDefaultTab('Main');
-    tabName = setDefaultTab('Tools');
+    setDefaultTab('Main')
+    tabName = setDefaultTab('Tools')
 end
 
 -- Initialize script_bot and script paths
