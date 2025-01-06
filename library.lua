@@ -11,7 +11,6 @@
   Tooltip: Tooltip que irá ficar no widget
 ]]--
 
-warn('asd')
 local scrollBarLayout = [[
 Panel
   height: 28
