@@ -1,6 +1,6 @@
 local macroName = 'Turn';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+setDefaultTab(tabName);
 
 Turn = {}
 
