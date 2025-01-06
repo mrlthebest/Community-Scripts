@@ -1,3 +1,4 @@
+--[[
 tabName = nil;
 if ragnarokBot then
     setDefaultTab('Tools')
@@ -6,6 +7,7 @@ else
     setDefaultTab('Main')
     tabName = setDefaultTab('Tools')
 end
+]]--
 
 -- Initialize script_bot and script paths
 script_bot = {};
