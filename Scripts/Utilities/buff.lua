@@ -1,6 +1,6 @@
 local macroName = 'Buff';
 local macroDelay = 100;
-
+setDefaultTab(tabName);
 local checkBox = {};
 
 if not storage.buffCDW then
