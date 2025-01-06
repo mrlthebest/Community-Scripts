@@ -12,7 +12,7 @@
 ]]--
 
 -- Scroll Bar Layout
-local scrollBarLayout = [[
+scrollBar = [[
 Panel
   height: 28
   margin-top: 3
@@ -35,22 +35,21 @@ Panel
     step: 1
 ]];
 
-storage.scrollBarValues = storage.scrollBarValues or {}
-
+storage.scrollBarValues = storage.scrollBarValues or {};
 addScrollBar = function(id, title, min, max, defaultValue, dest, tooltip)
-    local value = math.min(math.max(storage.scrollBarValues[id] or defaultValue, min), max)
-    local widget = setupUI(scrollBarLayout, dest)
-    if not widget.text or not widget.scroll then
-        error("Failed to create widgets for scroll bar")
-        return
-    end
+    local value = storage.scrollBarValues[id] or defaultValue
+    local widget = setupUI(scrollBar, dest)
     widget.text:setTooltip(tooltip)
     widget.scroll.onValueChange = function(scroll, value)
-        widget.text:setText(title .. ": " .. value)
+        widget.text:setText(title)
+        widget.scroll:setText(value)
+        if value == 0 then
+            value = 1
+        end
         storage.scrollBarValues[id] = value
     end
-    widget.scroll:setMinimum(min)
-    widget.scroll:setMaximum(max)
+    widget.scroll:setRange(min, max)
+    widget.scroll:setTooltip(tooltip)
     widget.scroll:setValue(value)
     widget.scroll.onValueChange(widget.scroll, value)
 end
