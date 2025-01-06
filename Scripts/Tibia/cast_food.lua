@@ -1,6 +1,7 @@
 local macroName = 'Cast Food';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+
+
 if voc() ~= 1 and voc() ~= 11 then
     if storage.foodItems then
         local t = {}
