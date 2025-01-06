@@ -169,9 +169,8 @@ MainWindow
 
                         script_bot.buttonRemoveJson.onClick = function(widget)
                             g_resources.deleteFile(script_path_json);
-                            warn(script_path_json)
                             --script_bot.saveScripts();
-                            --reload();
+                            reload();
                         end
 
                         -- Close Widget Button
