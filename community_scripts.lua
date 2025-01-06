@@ -12,7 +12,7 @@ end
 -- Initialize script_bot and script paths
 script_bot = {};
 script_path = '/scripts_storage/';
-script_path_json = script_path .. player:getName() .. '.json';
+script_path_json = (ragnarokBot and ragnarokBot.path or script_path) .. player:getName() .. '.json';
 
 -- Actual Version
 actualVersion = 0.4;
