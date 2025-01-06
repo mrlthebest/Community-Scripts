@@ -1,6 +1,6 @@
 local macroName = 'Bug Map Mobile';
 local macroDelay = 100;
-
+setDefaultTab(tabName);
 local bugMapMobile = {};
 
 local cursorWidget = g_ui.getRootWidget():recursiveGetChildById('pointer');
