@@ -1,6 +1,5 @@
 local macroName = 'Enemy';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
 
 UI.Button("Friends", function(newText)
   UI.MultilineEditorWindow(storage.FriendText or "", {title="Amigos", description="Coloque o nome dos amigos", width=250, height=200}, function(text)
