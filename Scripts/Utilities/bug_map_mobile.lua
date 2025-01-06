@@ -1,6 +1,5 @@
 local macroName = 'Bug Map Mobile';
 local macroDelay = 100;
-local tabName = setDefaultTab('Main');
 
 local bugMapMobile = {};
 
