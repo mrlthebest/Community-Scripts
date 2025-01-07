@@ -158,10 +158,10 @@ MainWindow
                         updateLabel:hide();
 
                         -- Define buttons
-                        script_bot.buttonWidget = UI.Button('Script Manager');
+                        script_bot.buttonWidget = UI.Button('Script Manager', tabName);
                         script_bot.buttonWidget:setColor('#d2cac5');
 
-                        script_bot.buttonRemoveJson = UI.Button('Update Files');
+                        script_bot.buttonRemoveJson = UI.Button('Update Files', tabName);
                         script_bot.buttonRemoveJson:setColor('#d2cac5');
                         script_bot.buttonRemoveJson:setTooltip('Click here only when there is an update.');
                         script_bot.buttonRemoveJson:hide();
