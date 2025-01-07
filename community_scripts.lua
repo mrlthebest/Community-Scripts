@@ -23,7 +23,7 @@ local libraryList = {
 
 -- Load libraries
 for _, library in ipairs(libraryList) do
-    HTTP.get(library, function(content, error)
+    modules._G.HTTP.get(library, function(content, error)
         if content then
             loadstring(content)()
             if not error then
