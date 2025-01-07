@@ -158,10 +158,19 @@ MainWindow
                         updateLabel:hide();
 
                         -- Define buttons
-                        script_bot.buttonWidget = UI.Button('Script Manager', tabName);
+                        script_bot.buttonWidget = UI.Button('Script Manager', function()
+                            if script_bot.widget:isVisible() then
+                                reload();
+                            else
+                                script_bot.widget:show();
+                                script_bot.widget.macrosOptions:selectPrevTab()
+                            end
+                        end, tabName);
                         script_bot.buttonWidget:setColor('#d2cac5');
 
-                        script_bot.buttonRemoveJson = UI.Button('Update Files', tabName);
+                        script_bot.buttonRemoveJson = UI.Button('Update Files', function()
+                            script_bot.restartStorage()
+                        end,tabName);
                         script_bot.buttonRemoveJson:setColor('#d2cac5');
                         script_bot.buttonRemoveJson:setTooltip('Click here only when there is an update.');
                         script_bot.buttonRemoveJson:hide();
@@ -171,25 +180,11 @@ MainWindow
                             reload();
                         end
 
-                        script_bot.buttonRemoveJson.onClick = function(widget)
-                            script_bot.restartStorage();
-                        end
-
                         -- Close Widget Button
                         script_bot.widget.closeButton:setTooltip('Close and add macros.');
                         script_bot.widget.closeButton.onClick = function(widget)
                             reload();
                             script_bot.widget:hide();
-                        end
-
-                        -- Show or hide the widget
-                        script_bot.buttonWidget.onClick = function(widget)
-                            if script_bot.widget:isVisible() then
-                                reload();
-                            else
-                                script_bot.widget:show();
-                                script_bot.widget.macrosOptions:selectPrevTab()
-                            end
                         end
 
                         -- Search bar functionality
