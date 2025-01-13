@@ -33,4 +33,4 @@ Turn.macro = macro(macroDelay, macroName, function()
             end
         end
     end
-end, tabName)
+end)
