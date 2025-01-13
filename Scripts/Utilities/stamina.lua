@@ -102,6 +102,6 @@ Panel
     use(candidates[math.random(1, #candidates)])
   end)
 end
-staminaItems(toolsTab)
+staminaItems(tabName)
 
 
