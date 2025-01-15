@@ -21,5 +21,5 @@ mysticFull = function()
   delay(1000)
 end
 
-macro(macroDelay, macroName, mysticMacro, tabName);
-macro(macroDelay, macroName .. " Full", mysticFull, tabName);
+macro(macroDelay, macroName, mysticMacro);
+macro(macroDelay, macroName .. " Full", mysticFull);
