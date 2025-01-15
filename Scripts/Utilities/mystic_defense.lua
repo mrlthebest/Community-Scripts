@@ -4,7 +4,7 @@ setDefaultTab(tabName);
 
 addTextEdit("Mystic Defense, Mystic Kai", storage.mysticSpell or "Mystic Defense, Mystic Kai", function(widget, text)
   storage.mysticSpell = text;
-end, tabName);
+end);
 
 mysticMacro = function()
     local selfHealth, selfMana = hppercent(), manapercent();
